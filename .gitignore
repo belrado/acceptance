@@ -1,0 +1,9 @@
+/vendor/
+/logs/*
+!/logs/README.md
+docker-compose.yml
+logs/
+/src/settings.php
+src/settings.php
+README.md
+CONTRIBUTING.md
