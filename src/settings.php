@@ -15,18 +15,18 @@ return [
             'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
-
         // Databases settings
         'db'        => [
-            'host'      => 'host',
-            'user'      => 'user',
-            'pass'      => 'pass',
-            'port'      => portNum,
-            'dbname'    => 'dbname'
+            'host'      => 'localhost',
+            'user'      => 'psuapi_db',
+            'pass'      => 'api_db_sql!',
+            'port'      => 3306,
+            'dbname'    => 'psuapi_db'
         ],
         // jwt settings
         'jwt'       => [
-            'secret'    => 'supersecretkeyyoushouldnotcommittogithub'
+            //'secret'    => 'supersecretkeyyoushouldnotcommittogithub'
+            'secret'    => 'psumediumvapisupersecretkeywebbernardodev',
             'apikey'    => 'psueduorgmediprepumvietnam'
         ],
     ],
