@@ -21,7 +21,14 @@ return [
             'host'      => 'localhost',
             'user'      => 'psuapi_db',
             'pass'      => 'api_db_sql!',
+            'port'      => 3306,
             'dbname'    => 'psuapi_db'
+        ],
+        // jwt settings
+        'jwt'       => [
+            //'secret'    => 'supersecretkeyyoushouldnotcommittogithub'
+            'secret'    => 'psumediumvapisupersecretkeywebbernardodev',
+            'apikey'    => 'psueduorgmediprepumvietnam'
         ],
     ],
 ];
